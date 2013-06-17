@@ -82,16 +82,9 @@ Ext.define('PrototypesMobile.view.Login', {
                 cls: 'login-button'
             },
             {
-                xtype: 'container',
-                items: [
-                    {
-                        xtype: 'label',
-                        name: 'lblNeedHelp',
-                        html: 'Need Help?',
-                        padding: '10 10 10 10',
-                        style: 'text-decoration:underline; color: gray; text-align:center;'
-                    }
-                ]
+                xtype: 'button',
+                text: 'Need Help?',
+                cls: 'login-need-help-button'
             }
         ]
     }

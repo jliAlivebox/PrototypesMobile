@@ -17,6 +17,18 @@
   margin-right: 9px;
 }
 
+.login-need-help-button{
+  color:#1F1F1F;
+  padding: 0;
+  border: none;
+  background: none;
+  text-decoration:underline;
+  position: absolute;
+  bottom: 0;
+  left:50%;
+  margin-left:-40px;
+}
+
 .login-container {
   background:#383838;
   min-width: 100px;

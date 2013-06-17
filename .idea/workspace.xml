@@ -10,7 +10,7 @@
     <file path="$PROJECT_DIR$/../xxledrinks/app/view/Main.js" changelist="b669b61b-0d91-4ce4-b710-01e9e348e414" time="1370893748490" ignored="false" />
     <file path="/Login.js" changelist="b669b61b-0d91-4ce4-b710-01e9e348e414" time="1371507507596" ignored="false" />
     <file path="/a.dummy" changelist="b669b61b-0d91-4ce4-b710-01e9e348e414" time="1371505153755" ignored="false" />
-    <file path="/Login.scss" changelist="b669b61b-0d91-4ce4-b710-01e9e348e414" time="1371507800230" ignored="false" />
+    <file path="/Login.scss" changelist="b669b61b-0d91-4ce4-b710-01e9e348e414" time="1371509876577" ignored="false" />
     <file path="/index.php" changelist="b669b61b-0d91-4ce4-b710-01e9e348e414" time="1371491830288" ignored="false" />
     <file path="/app.json" changelist="b669b61b-0d91-4ce4-b710-01e9e348e414" time="1371497092448" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,10 +32,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Login.scss" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Login.scss" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/sass/src/view/Login.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="13" selection-start="511" selection-end="511" vertical-scroll-proportion="-5.2">
+            <state line="28" column="16" selection-start="473" selection-end="473" vertical-scroll-proportion="0.45554203">
               <folding />
             </state>
           </provider>
@@ -44,16 +44,16 @@
       <file leaf-file-name="Login.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/view/Login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="4" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0">
+            <state line="85" column="33" selection-start="2691" selection-end="2691" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="25" selection-start="1542" selection-end="1542" vertical-scroll-proportion="0.6781065">
+            <state line="46" column="18" selection-start="1357" selection-end="1357" vertical-scroll-proportion="-18.115385">
               <folding />
             </state>
           </provider>
@@ -81,10 +81,10 @@
         <option value="$PROJECT_DIR$/app/view/Main.js" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/app.json" />
-        <option value="$PROJECT_DIR$/app/view/Login.js" />
-        <option value="$PROJECT_DIR$/resources/sass/src/view/Login.scss" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/app/view/Login.js" />
+        <option value="$PROJECT_DIR$/resources/sass/src/view/Login.scss" />
       </list>
     </option>
   </component>
@@ -529,23 +529,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/sass/src/view/Login.scss">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="13" selection-start="511" selection-end="511" vertical-scroll-proportion="-5.2">
+        <state line="46" column="18" selection-start="1357" selection-end="1357" vertical-scroll-proportion="-18.115385">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/Login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="4" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0">
+        <state line="85" column="33" selection-start="2691" selection-end="2691" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/resources/sass/src/view/Login.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="25" selection-start="1542" selection-end="1542" vertical-scroll-proportion="0.6781065">
+        <state line="28" column="16" selection-start="473" selection-end="473" vertical-scroll-proportion="0.45554203">
           <folding />
         </state>
       </provider>

@@ -8,7 +8,7 @@
     <file path="/Dummy.txt" changelist="b669b61b-0d91-4ce4-b710-01e9e348e414" time="1370883920539" ignored="false" />
     <file path="$PROJECT_DIR$/../Prototipos/app/view/selfservice/importwizard/ImportWizardCardContainer.js" changelist="b669b61b-0d91-4ce4-b710-01e9e348e414" time="1370885548004" ignored="false" />
     <file path="$PROJECT_DIR$/../xxledrinks/app/view/Main.js" changelist="b669b61b-0d91-4ce4-b710-01e9e348e414" time="1370893748490" ignored="false" />
-    <file path="/Login.js" changelist="b669b61b-0d91-4ce4-b710-01e9e348e414" time="1371486684833" ignored="false" />
+    <file path="/Login.js" changelist="b669b61b-0d91-4ce4-b710-01e9e348e414" time="1371487936408" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +31,7 @@
       <file leaf-file-name="Login.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/view/Login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="30" selection-start="840" selection-end="840" vertical-scroll-proportion="0.39494833">
+            <state line="41" column="33" selection-start="1307" selection-end="1307" vertical-scroll-proportion="0.66819745">
               <folding />
             </state>
           </provider>
@@ -440,7 +440,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/Login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="30" selection-start="840" selection-end="840" vertical-scroll-proportion="0.39494833">
+        <state line="41" column="33" selection-start="1307" selection-end="1307" vertical-scroll-proportion="0.66819745">
           <folding />
         </state>
       </provider>

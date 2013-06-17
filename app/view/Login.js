@@ -38,6 +38,7 @@ Ext.define('PrototypesMobile.view.Login', {
                         xtype: 'button',
                         text: 'alivebox',
                         iconAlign: 'right',
+                        left: '50%',
                         icon: 'resources/icons/foward.png',
                         style: 'color: #2B36FC; text-align:right;'
 
@@ -61,10 +62,15 @@ Ext.define('PrototypesMobile.view.Login', {
                 style: 'background: #F21C1C; color: white;'
             },
             {
-                xtype: 'label',
-                html: 'Need Help?',
-                padding: '10 10 10 10',
-                style: 'text-decoration:underline; color: gray; text-align:center;'
+                xtype: 'container',
+                items: [
+                    {
+                        xtype: 'label',
+                        html: 'Need Help?',
+                        padding: '10 10 10 10',
+                        style: 'text-decoration:underline; color: gray; text-align:center;'
+                    }
+                ]
             }
         ]
     }

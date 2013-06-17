@@ -27,7 +27,7 @@ Ext.application({
     ],
 
     views: [
-        'Main'
+        'Login'
     ],
 
     icon: {
@@ -53,7 +53,7 @@ Ext.application({
         Ext.fly('appLoadingIndicator').destroy();
 
         // Initialize the main view
-        Ext.Viewport.add(Ext.create('PrototypesMobile.view.Main'));
+        Ext.Viewport.add(Ext.create('PrototypesMobile.view.Login'));
     },
 
     onUpdated: function() {

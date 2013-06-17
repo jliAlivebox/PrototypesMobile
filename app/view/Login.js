@@ -1,14 +1,20 @@
 Ext.define('PrototypesMobile.view.Login', {
     extend: 'Ext.Container',
     xtype: 'login',
+    id: 'login',
     requires: [    'Ext.form.Panel',
         'Ext.form.FieldSet',
         'Ext.field.Password'
     ],
     scrollable: false,
-    style: 'background: #383838',
+    cls: 'login-container',
     config: {
         items: [
+            {
+                xtype: 'img',
+                src: 'resources/icons/header.png',
+                cls: 'login-show-mgr-logo'
+            },
             {
                 xtype: 'fieldset',
                 items: [
@@ -35,13 +41,21 @@ Ext.define('PrototypesMobile.view.Login', {
                         readOnly: true
                     },
                     {
+                        xtype: 'label',
+                        name: 'lblCompany',
+                        item: 'lblCompany',
+                        right: 30,
+                        top: 12,
+                        cls: 'login-company-label',
+                        html: 'alivebox'
+                    },
+                    {
                         xtype: 'button',
-                        text: 'alivebox',
                         iconAlign: 'right',
-                        left: '50%',
-                        icon: 'resources/icons/foward.png',
-                        style: 'color: #2B36FC; text-align:right;'
-
+                        right: 0,
+                        text: ' ',
+                        cls: 'login-company-button',
+                        icon: 'resources/icons/foward.png'
                     }
                 ]
             },
@@ -49,23 +63,30 @@ Ext.define('PrototypesMobile.view.Login', {
                 xtype: 'fieldset',
                 items: [
                     {
+                        xtype: 'textfield',
+                        name: 'txtMail',
+                        placeHolder: 'remember me',
+                        readOnly: true
+                    },
+                    {
                         xtype: 'togglefield',
                         name: 'tfRememberMe',
-                        label: 'remenber me',
-                        labelWidth: '70%'
+                        top: 3,
+                        cls: 'login-remember-me-toggle'
                     }
                 ]
             },
             {
                 xtype: 'button',
                 text: 'Log In',
-                style: 'background: #F21C1C; color: white;'
+                cls: 'login-button'
             },
             {
                 xtype: 'container',
                 items: [
                     {
                         xtype: 'label',
+                        name: 'lblNeedHelp',
                         html: 'Need Help?',
                         padding: '10 10 10 10',
                         style: 'text-decoration:underline; color: gray; text-align:center;'

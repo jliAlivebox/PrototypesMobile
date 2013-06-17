@@ -70,6 +70,10 @@
         {
             "path": "resources/css/app.css",
             "update": "delta"
+        },
+        {
+            "path": "resources/sass/src/view/Login.css",
+            "update": "delta"
         }
     ],
 

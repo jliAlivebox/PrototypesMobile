@@ -11,7 +11,7 @@
     <file path="/Login.js" changelist="b669b61b-0d91-4ce4-b710-01e9e348e414" time="1371592232387" ignored="false" />
     <file path="/a.dummy" changelist="b669b61b-0d91-4ce4-b710-01e9e348e414" time="1371591481862" ignored="false" />
     <file path="/Login.scss" changelist="b669b61b-0d91-4ce4-b710-01e9e348e414" time="1371588168704" ignored="false" />
-    <file path="/index.php" changelist="b669b61b-0d91-4ce4-b710-01e9e348e414" time="1371491830288" ignored="false" />
+    <file path="/index.php" changelist="b669b61b-0d91-4ce4-b710-01e9e348e414" time="1371594568601" ignored="false" />
     <file path="/app.json" changelist="b669b61b-0d91-4ce4-b710-01e9e348e414" time="1371590159795" ignored="false" />
     <file path="/LoginController.js" changelist="b669b61b-0d91-4ce4-b710-01e9e348e414" time="1371585977475" ignored="false" />
     <file path="/MainController.js" changelist="b669b61b-0d91-4ce4-b710-01e9e348e414" time="1371593290779" ignored="false" />
@@ -56,10 +56,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainController.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="MainController.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controller/MainController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="42" selection-start="896" selection-end="896" vertical-scroll-proportion="0.6831229">
+            <state line="35" column="42" selection-start="896" selection-end="896" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -92,10 +92,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.json" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="app.json" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="49" selection-start="3933" selection-end="3933" vertical-scroll-proportion="-17.653847">
+            <state line="82" column="34" selection-start="3916" selection-end="3916" vertical-scroll-proportion="0.5144654">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="52" column="29" selection-start="1546" selection-end="1546" vertical-scroll-proportion="-22.038462">
               <folding />
             </state>
           </provider>
@@ -122,18 +131,18 @@
       <list>
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/resources/sass/src/view/Login.css" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/app/view/help.js" />
         <option value="$PROJECT_DIR$/app/controller/LoginController.js" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/resources/sass/src/view/Login.scss" />
-        <option value="$PROJECT_DIR$/app.json" />
         <option value="$PROJECT_DIR$/resources/sass/src/view/Main.scss" />
         <option value="$PROJECT_DIR$/resources/sass/src/view/Help.scss" />
         <option value="$PROJECT_DIR$/app/view/Main.js" />
         <option value="$PROJECT_DIR$/app/view/Help.js" />
         <option value="$PROJECT_DIR$/app/view/Login.js" />
         <option value="$PROJECT_DIR$/app/controller/MainController.js" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/app.json" />
       </list>
     </option>
   </component>
@@ -305,6 +314,10 @@
               <option name="myItemId" value="view" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Help.scss" />
+              <option name="myItemType" value="com.intellij.plugins.watcher.projectView.NestingTreeNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -339,32 +352,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PrototypesMobile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PrototypesMobile" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -583,11 +570,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/css/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="3" selection-start="1382" selection-end="1382" vertical-scroll-proportion="0.4755245" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/touch/microloader/development.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="29" selection-start="33" selection-end="33" vertical-scroll-proportion="-2.4741676" />
@@ -621,13 +603,6 @@
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="47" column="19" selection-start="1232" selection-end="1232" vertical-scroll-proportion="0.72215843">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="49" selection-start="3933" selection-end="3933" vertical-scroll-proportion="-17.653847">
           <folding />
         </state>
       </provider>
@@ -676,7 +651,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controller/MainController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="42" selection-start="896" selection-end="896" vertical-scroll-proportion="0.6831229">
+        <state line="35" column="42" selection-start="896" selection-end="896" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="29" selection-start="1546" selection-end="1546" vertical-scroll-proportion="-22.038462">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="34" selection-start="3916" selection-end="3916" vertical-scroll-proportion="0.5144654">
           <folding />
         </state>
       </provider>

@@ -72,15 +72,15 @@
             "update": "delta"
         },
         {
-            "path": "resources/sass/src/view/Login.css",
+            "path": "resources/css/src/view/Login.css",
             "update": "delta"
         },
         {
-            "path": "resources/sass/src/view/Main.css",
+            "path": "resources/css/src/view/Main.css",
             "update": "delta"
         },
         {
-            "path": "resources/sass/src/view/Help.css",
+            "path": "resources/css/src/view/Help.css",
             "update": "delta"
         }
     ],

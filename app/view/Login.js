@@ -12,8 +12,12 @@ Ext.define('PrototypesMobile.view.Login', {
         items: [
             {
                 xtype: 'img',
-                src: 'resources/icons/header.png',
+                src: 'resources/icons/header2.png',
                 cls: 'login-show-mgr-logo'
+            },
+            {
+                xtype: 'label',
+                cls: 'login-show-mgr-logo-background'
             },
             {
                 xtype: 'fieldset',

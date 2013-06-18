@@ -62541,16 +62541,23 @@ Ext.define('PrototypesMobile.view.Login', {
     id: 'login',
                                     
                             
-                            
+                             
+                           
+                    
+                 
       
     scrollable: false,
-    cls: 'login-container',
     config: {
+        cls: 'show-mgr-container',
         items: [
             {
                 xtype: 'img',
                 src: 'resources/icons/header.png',
                 cls: 'login-show-mgr-logo'
+            },
+            {
+                xtype: 'label',
+                cls: 'login-show-mgr-logo-background'
             },
             {
                 xtype: 'fieldset',
@@ -62584,7 +62591,7 @@ Ext.define('PrototypesMobile.view.Login', {
                         right: 30,
                         top: 12,
                         cls: 'login-company-label',
-                        html: 'alivebox'
+                        html: 'Alivebox'
                     },
                     {
                         xtype: 'button',
@@ -62616,21 +62623,191 @@ Ext.define('PrototypesMobile.view.Login', {
             {
                 xtype: 'button',
                 text: 'Log In',
-                cls: 'login-button'
+                cls: 'show-mgr-button'
             },
             {
-                xtype: 'container',
-                items: [
-                    {
-                        xtype: 'label',
-                        name: 'lblNeedHelp',
-                        html: 'Need Help?',
-                        padding: '10 10 10 10',
-                        style: 'text-decoration:underline; color: gray; text-align:center;'
-                    }
-                ]
+                xtype: 'button',
+                text: 'Need Help?',
+                cls: 'login-need-help-button',
+                itemId: 'btnLoginHelp'
             }
         ]
+    },
+
+    onHelpSelected: function(){
+        debugger;
+        this.fireEvent('helpSelected', this);
+    }
+});
+
+Ext.define('PrototypesMobile.view.Help', {
+    extend:  Ext.Container ,
+    xtype: 'help',
+    id: 'help',
+    fullscreen: true,
+    config: {
+        cls: 'show-mgr-container',
+        items: [
+            {
+                xtype : 'toolbar',
+                docked: 'top',
+                title: 'Help',
+                cls: 'show-mrg-toolbar',
+                items: [
+                    {
+                        xtype: 'button',
+                        text: 'Back',
+                        cls: 'show-mgr-toolbar-button toolbar-btn',
+                        itemId: 'btnHelpBack'
+                    }
+                ]
+            },
+            {
+                xtype: 'label',
+                html: 'Forgot Password?',
+                cls: 'show-mgr-label show-mgr-help-label bold-thick'
+            },
+            {
+                xtype: 'fieldset',
+                layout: 'float',
+                items: [
+                    {
+                        xtype: 'textfield',
+                        name: 'txtCompany',
+                        placeHolder: 'Company',
+                        readOnly: true
+                    },
+                    {
+                        xtype: 'label',
+                        name: 'lblCompany',
+                        item: 'lblCompany',
+                        right: 30,
+                        top: 12,
+                        cls: 'login-company-label',
+                        html: 'None'
+                    },
+                    {
+                        xtype: 'button',
+                        iconAlign: 'right',
+                        right: 0,
+                        text: ' ',
+                        cls: 'login-company-button',
+                        icon: 'resources/icons/foward.png'
+                    }
+                ]
+            },
+            {
+                xtype: 'fieldset',
+                layout: 'float',
+                items: [
+                    {
+                        xtype: 'textfield',
+                        name: 'txtMail',
+                        placeHolder: 'username'
+                    }
+                ]
+            },
+            {
+                xtype: 'label',
+                html: 'or',
+                cls: 'show-mgr-label or-center'
+            },
+            {
+                xtype: 'fieldset',
+                layout: 'float',
+                items: [
+                    {
+                        xtype: 'passwordfield',
+                        name: 'txtPassword',
+                        placeHolder: 'password'
+                    }
+                ]
+            },
+            {
+                xtype: 'button',
+                text: 'Submit',
+                cls: 'show-mgr-button'
+            },
+            {
+                xtype: 'label',
+                html: 'New User?',
+                cls: 'show-mgr-label show-mgr-help-label bold-thick'
+            },
+            {
+                xtype: 'label',
+                html: 'To access ShowMgr Mobile, you must have an' +
+                    'active and elegible ShowMrg user account.',
+                cls: 'show-mgr-label show-mgr-help-label'
+            },
+            {
+                xtype: 'label',
+                html: 'Please contact your System Administrator to' +
+                    'request credentials',
+                cls: 'show-mgr-label show-mgr-help-label'
+            }
+        ]
+    },
+
+    onBackSelected: function(){
+        debugger;
+        this.fireEvent('backSelected', this);
+    }
+});
+
+Ext.define('PrototypesMobile.view.Main', {
+    extend:  Ext.Container ,
+    xtype: 'main',
+    id: 'main',
+    config: {
+        layout: 'card',
+        fullscreen:true,
+        items: [
+            {
+                xtype: 'login'
+            },
+            {
+                xtype: 'help'
+            }
+        ]
+    }
+});
+
+Ext.define('PrototypesMobile.controller.MainController', {
+    extend:  Ext.app.Controller ,
+    config: {
+        refs: {
+            mainView : 'main',
+            loginView : 'login',
+            helpView : 'help',
+            btnLoginHelp: 'login [itemId=btnLoginHelp]',
+            btnHelpBack: 'help [itemId=btnHelpBack]'
+        },
+
+        control: {
+            login: {
+                helpSelected: 'onHelpSelected'
+            },
+            help: {
+                backSelected: 'onBackSelected'
+            },
+            btnLoginHelp: {
+                tap: 'onHelpSelected'
+            },
+            btnHelpBack: {
+                tap: 'onBackSelected'
+            }
+        }
+    },
+
+    launch: function() {
+    },
+
+    onHelpSelected: function() {
+        this.getMainView().setActiveItem(1);
+    },
+
+    onBackSelected: function() {
+        this.getMainView().setActiveItem(0);
     }
 });
 
@@ -62658,7 +62835,13 @@ Ext.application({
       
 
     views: [
-        'Login'
+        'Login',
+        'Main',
+        'Help'
+    ],
+
+    controllers: [
+        'MainController'
     ],
 
     icon: {
@@ -62684,7 +62867,7 @@ Ext.application({
         Ext.fly('appLoadingIndicator').destroy();
 
         // Initialize the main view
-        Ext.Viewport.add(Ext.create('PrototypesMobile.view.Login'));
+        Ext.Viewport.add(Ext.create('PrototypesMobile.view.Main'));
     },
 
     onUpdated: function() {

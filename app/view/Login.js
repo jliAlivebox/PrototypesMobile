@@ -4,15 +4,18 @@ Ext.define('PrototypesMobile.view.Login', {
     id: 'login',
     requires: [    'Ext.form.Panel',
         'Ext.form.FieldSet',
-        'Ext.field.Password'
+        'Ext.field.Password',
+        'Ext.field.Toggle',
+        'Ext.Label',
+        'Ext.Img'
     ],
     scrollable: false,
-    cls: 'login-container',
     config: {
+        cls: 'show-mgr-container',
         items: [
             {
                 xtype: 'img',
-                src: 'resources/icons/header2.png',
+                src: 'resources/icons/header.png',
                 cls: 'login-show-mgr-logo'
             },
             {
@@ -51,7 +54,7 @@ Ext.define('PrototypesMobile.view.Login', {
                         right: 30,
                         top: 12,
                         cls: 'login-company-label',
-                        html: 'alivebox'
+                        html: 'Alivebox'
                     },
                     {
                         xtype: 'button',
@@ -83,13 +86,19 @@ Ext.define('PrototypesMobile.view.Login', {
             {
                 xtype: 'button',
                 text: 'Log In',
-                cls: 'login-button'
+                cls: 'show-mgr-button'
             },
             {
                 xtype: 'button',
                 text: 'Need Help?',
-                cls: 'login-need-help-button'
+                cls: 'login-need-help-button',
+                itemId: 'btnLoginHelp'
             }
         ]
+    },
+
+    onHelpSelected: function(){
+        debugger;
+        this.fireEvent('helpSelected', this);
     }
 });

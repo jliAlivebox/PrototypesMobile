@@ -8,7 +8,7 @@
     <file path="/Dummy.txt" changelist="b669b61b-0d91-4ce4-b710-01e9e348e414" time="1371657269118" ignored="false" />
     <file path="$PROJECT_DIR$/../Prototipos/app/view/selfservice/importwizard/ImportWizardCardContainer.js" changelist="b669b61b-0d91-4ce4-b710-01e9e348e414" time="1370885548004" ignored="false" />
     <file path="$PROJECT_DIR$/../xxledrinks/app/view/Main.js" changelist="b669b61b-0d91-4ce4-b710-01e9e348e414" time="1370893748490" ignored="false" />
-    <file path="/Login.js" changelist="b669b61b-0d91-4ce4-b710-01e9e348e414" time="1371679488368" ignored="false" />
+    <file path="/Login.js" changelist="b669b61b-0d91-4ce4-b710-01e9e348e414" time="1371680247367" ignored="false" />
     <file path="/a.dummy" changelist="b669b61b-0d91-4ce4-b710-01e9e348e414" time="1371591481862" ignored="false" />
     <file path="/Login.scss" changelist="b669b61b-0d91-4ce4-b710-01e9e348e414" time="1371677177058" ignored="false" />
     <file path="/index.php" changelist="b669b61b-0d91-4ce4-b710-01e9e348e414" time="1371594568601" ignored="false" />
@@ -18,7 +18,7 @@
     <file path="/Help.js" changelist="b669b61b-0d91-4ce4-b710-01e9e348e414" time="1371593021664" ignored="false" />
     <file path="/Main.scss" changelist="b669b61b-0d91-4ce4-b710-01e9e348e414" time="1371678168172" ignored="false" />
     <file path="/Help.scss" changelist="b669b61b-0d91-4ce4-b710-01e9e348e414" time="1371591298862" ignored="false" />
-    <file path="$PROJECT_DIR$/build/PrototypesMobile/testing/app.js" changelist="b669b61b-0d91-4ce4-b710-01e9e348e414" time="1371679949878" ignored="false" />
+    <file path="$PROJECT_DIR$/build/PrototypesMobile/testing/app.js" changelist="b669b61b-0d91-4ce4-b710-01e9e348e414" time="1371680243305" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +41,7 @@
       <file leaf-file-name="Login.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/view/Login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="112" column="38" selection-start="4056" selection-end="4056" vertical-scroll-proportion="0.6479902">
+            <state line="11" column="20" selection-start="300" selection-end="300" vertical-scroll-proportion="0.22777101">
               <folding />
             </state>
           </provider>
@@ -123,8 +123,8 @@
         <option value="$PROJECT_DIR$/app.json" />
         <option value="$PROJECT_DIR$/app/view/Help.js" />
         <option value="$PROJECT_DIR$/resources/sass/src/view/Login.scss" />
-        <option value="$PROJECT_DIR$/app/view/Login.js" />
         <option value="$PROJECT_DIR$/resources/sass/src/view/Main.scss" />
+        <option value="$PROJECT_DIR$/app/view/Login.js" />
       </list>
     </option>
   </component>
@@ -651,7 +651,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/Login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="38" selection-start="4056" selection-end="4056" vertical-scroll-proportion="0.6479902">
+        <state line="11" column="20" selection-start="300" selection-end="300" vertical-scroll-proportion="0.22777101">
           <folding />
         </state>
       </provider>

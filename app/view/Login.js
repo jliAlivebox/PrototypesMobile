@@ -9,7 +9,7 @@ Ext.define('PrototypesMobile.view.Login', {
         'Ext.Label',
         'Ext.Img'
     ],
-    scrollable: false,
+    scrollable: true,
     config: {
         cls: 'main-container',
         items: [

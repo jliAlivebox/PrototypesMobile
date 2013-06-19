@@ -40,6 +40,9 @@ $defaultred: #BF1B19;
 
 .footer-container {
   position:fixed;
+  z-index:0;
+  bottom:0;
+  width:100%;
 }
 
 .show-mrg-toolbar {

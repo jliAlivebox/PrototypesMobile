@@ -104,13 +104,8 @@ Ext.define('PrototypesMobile.view.Login', {
             },
             {
                 xtype: 'container',
-                hegith: '100%',
-                //cls: 'footer-container',
+                cls: 'footer-container',
                 items: [
-                    {
-                        xtype: 'container',
-                        height: '90%'
-                    },
                     {
                         xtype: 'button',
                         text: 'Need Help?',

@@ -28,7 +28,10 @@
   width: 100%; }
 
 .footer-container {
-  position: fixed; }
+  position: fixed;
+  z-index: 0;
+  bottom: 0;
+  width: 100%; }
 
 .show-mrg-toolbar {
   background: #bf1b19; }

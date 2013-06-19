@@ -22,9 +22,24 @@ $defaultred: #BF1B19;
   color: white;
 }
 
-.show-mgr-container {
+.main-container{
   background: $defaultgray;
-  min-width: 100px;
+  min-height:100%;
+  position:relative;
+}
+
+.header-container {
+  position:fixed;
+  z-index:10;
+  top:0;
+  width: 100%;
+}
+
+.body-container{
+}
+
+.footer-container {
+  position:fixed;
 }
 
 .show-mrg-toolbar {
@@ -33,4 +48,18 @@ $defaultred: #BF1B19;
 
 .bold-thick {
   font-weight:bold;
+}
+
+.bottom-container{
+  height: 100%;
+  position: relative;
+}
+
+.show-mgr-clear-toolbar{
+  background: none !important;
+  background-color: none !important;
+  border-color: none !important;
+  border-style: none !important;
+  border: none;
+  hideBorders: true;
 }

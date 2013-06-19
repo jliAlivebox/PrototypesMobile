@@ -22,15 +22,12 @@ $lightbluec: #07B6E5;
 }
 
 .login-need-help-button{
-  color:#1F1F1F;
-  padding: 0;
-  border: none;
-  background: none;
   text-decoration:underline;
-  position: absolute;
-  bottom: 0;
-  left:50%;
-  margin-left:-40px;
+  background: none !important;
+  background-color: none !important;
+  border-color: none !important;
+  border-style: none !important;
+  color: #7E7E7E !important;
 }
 
 .login-company-button{
@@ -59,8 +56,7 @@ $lightbluec: #07B6E5;
   background-color:$lightbluec;
   background-image:-webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, $lightbluec), color-stop(100%, $lightbluec), color-stop(100%, $lightbluec), color-stop(100%, $lightbluec));
   background-image:-webkit-linear-gradient($lightbluec,$lightbluec 100%,$lightbluec 100%,$lightbluec);
-  background-image:linear-gradient($lightbluec,$lightbluec 100%,$lightbluec 100%,$lightbluec)
-
+  background-image:linear-gradient($lightbluec,$lightbluec 100%,$lightbluec 100%,$lightbluec);
 }
 
 #login .x-toggle-inner{

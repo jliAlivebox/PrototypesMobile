@@ -4,7 +4,7 @@ Ext.define('PrototypesMobile.view.Help', {
     id: 'help',
     fullscreen: true,
     config: {
-        cls: 'show-mgr-container',
+        cls: 'main-container',
         items: [
             {
                 xtype : 'toolbar',

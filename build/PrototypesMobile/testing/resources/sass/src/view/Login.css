@@ -19,15 +19,12 @@
   padding-left: 0px; }
 
 .login-need-help-button {
-  color: #1F1F1F;
-  padding: 0;
-  border: none;
-  background: none;
   text-decoration: underline;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  margin-left: -40px; }
+  background: none !important;
+  background-color: none !important;
+  border-color: none !important;
+  border-style: none !important;
+  color: #7E7E7E !important; }
 
 .login-company-button {
   color: #2B36FC;

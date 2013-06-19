@@ -62548,94 +62548,118 @@ Ext.define('PrototypesMobile.view.Login', {
       
     scrollable: false,
     config: {
-        cls: 'show-mgr-container',
+        cls: 'main-container',
         items: [
             {
-                xtype: 'img',
-                src: 'resources/icons/header.png',
-                cls: 'login-show-mgr-logo'
-            },
-            {
-                xtype: 'label',
-                cls: 'login-show-mgr-logo-background'
-            },
-            {
-                xtype: 'fieldset',
+                xtype: 'container',
                 items: [
                     {
-                        xtype: 'textfield',
-                        name: 'txtMail',
-                        placeHolder: 'example@mail.com'
-                    },
-                    {
-                        xtype: 'passwordfield',
-                        name: 'txtPassword',
-                        placeHolder: 'password'
-                    }
-                ]
-            },
-            {
-                xtype: 'fieldset',
-                layout: 'float',
-                items: [
-                    {
-                        xtype: 'textfield',
-                        name: 'txtCompany',
-                        placeHolder: 'Company',
-                        readOnly: true
+                        xtype: 'img',
+                        src: 'resources/icons/header.png',
+                        cls: 'login-show-mgr-logo'
                     },
                     {
                         xtype: 'label',
-                        name: 'lblCompany',
-                        item: 'lblCompany',
-                        right: 30,
-                        top: 12,
-                        cls: 'login-company-label',
-                        html: 'Alivebox'
+                        cls: 'login-show-mgr-logo-background'
+                    }
+                ]
+            },
+            {
+                xtype: 'container',
+                cls: 'body-container',
+                height: '500px',
+                items: [
+
+                    {
+                        xtype: 'fieldset',
+                        items: [
+                            {
+                                xtype: 'textfield',
+                                name: 'txtMail',
+                                placeHolder: 'example@mail.com'
+                            },
+                            {
+                                xtype: 'passwordfield',
+                                name: 'txtPassword',
+                                placeHolder: 'password'
+                            }
+                        ]
+                    },
+                    {
+                        xtype: 'fieldset',
+                        layout: 'float',
+                        items: [
+                            {
+                                xtype: 'textfield',
+                                name: 'txtCompany',
+                                placeHolder: 'Company',
+                                readOnly: true
+                            },
+                            {
+                                xtype: 'label',
+                                name: 'lblCompany',
+                                item: 'lblCompany',
+                                right: 30,
+                                top: 12,
+                                cls: 'login-company-label',
+                                html: 'Alivebox'
+                            },
+                            {
+                                xtype: 'button',
+                                iconAlign: 'right',
+                                right: 0,
+                                text: ' ',
+                                cls: 'login-company-button',
+                                icon: 'resources/icons/foward.png'
+                            }
+                        ]
+                    },
+                    {
+                        xtype: 'fieldset',
+                        items: [
+                            {
+                                xtype: 'textfield',
+                                name: 'txtMail',
+                                placeHolder: 'remember me',
+                                readOnly: true
+                            },
+                            {
+                                xtype: 'togglefield',
+                                name: 'tfRememberMe',
+                                padding: '0 10 0 0',
+                                top: 3,
+                                cls: 'login-remember-me-toggle'
+                            }
+                        ]
                     },
                     {
                         xtype: 'button',
-                        iconAlign: 'right',
-                        right: 0,
-                        text: ' ',
-                        cls: 'login-company-button',
-                        icon: 'resources/icons/foward.png'
+                        text: 'Log In',
+                        cls: 'show-mgr-button'
                     }
                 ]
             },
             {
-                xtype: 'fieldset',
+                xtype: 'container',
+                hegith: '100%',
+                //cls: 'footer-container',
                 items: [
                     {
-                        xtype: 'textfield',
-                        name: 'txtMail',
-                        placeHolder: 'remember me',
-                        readOnly: true
+                        xtype: 'container',
+                        height: '90%'
                     },
                     {
-                        xtype: 'togglefield',
-                        name: 'tfRememberMe',
-                        top: 3,
-                        cls: 'login-remember-me-toggle'
+                        xtype: 'button',
+                        text: 'Need Help?',
+                        cls: 'login-need-help-button',
+                        itemId: 'btnLoginHelp'
                     }
                 ]
-            },
-            {
-                xtype: 'button',
-                text: 'Log In',
-                cls: 'show-mgr-button'
-            },
-            {
-                xtype: 'button',
-                text: 'Need Help?',
-                cls: 'login-need-help-button',
-                itemId: 'btnLoginHelp'
             }
         ]
     },
 
     onHelpSelected: function(){
-        debugger;
         this.fireEvent('helpSelected', this);
     }
 });
@@ -62646,7 +62670,7 @@ Ext.define('PrototypesMobile.view.Help', {
     id: 'help',
     fullscreen: true,
     config: {
-        cls: 'show-mgr-container',
+        cls: 'main-container',
         items: [
             {
                 xtype : 'toolbar',

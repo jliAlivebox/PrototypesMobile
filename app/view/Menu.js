@@ -7,14 +7,16 @@ Ext.define('PrototypesMobile.view.Menu', {
         cls: 'main-container',
         items: [
             {
-                xtype: 'container',
+                xtype : 'toolbar',
+                docked: 'top',
+                title: 'Welcome, Nathan',
+                cls: 'show-mrg-toolbar',
                 items: [
                     {
-                        xtype: 'label',
-                        html: 'Welcome, Nathan',
-                        width: '50%',
-                        style: 'position:relative; margin-left: 50%; left: -90px;',
-                        cls: 'show-mgr-label bold-thick'
+                        xtype: 'button',
+                        text: 'Menu',
+                        cls: 'show-mgr-toolbar-button toolbar-btn',
+                        itemId: 'btnMenuBack'
                     }
                 ]
             },

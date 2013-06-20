@@ -30,11 +30,13 @@ Ext.application({
         'Login',
         'Main',
         'Help',
-        'Menu'
+        'Menu',
+        'order.MyOrders'
     ],
 
     controllers: [
-        'MainController'
+        'MainController',
+        'MenuController'
     ],
 
     icon: {

@@ -15,6 +15,9 @@ Ext.define('PrototypesMobile.view.Main', {
             },
             {
                 xtype: 'menu'
+            },
+            {
+                xtype: 'myorders'
             }
         ]
     }

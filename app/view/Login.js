@@ -29,7 +29,6 @@ Ext.define('PrototypesMobile.view.Login', {
             {
                 xtype: 'container',
                 cls: 'body-container',
-                height: '500px',
                 items: [
 
                     {

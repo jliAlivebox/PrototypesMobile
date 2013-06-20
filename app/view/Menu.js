@@ -8,26 +8,20 @@ Ext.define('PrototypesMobile.view.Menu', {
         items: [
             {
                 xtype: 'container',
-                layout: 'hbox',
                 items: [
                     {
                         xtype: 'label',
-                        html: 'Welcome,',
-                        cls: 'show-mgr-label show-mgr-help-label bold-thick'
-                    },
-                    {
-                        xtype: 'label',
-                        itemId: 'lblUserId',
-                        padding: '0 0 0 10',
-                        html: 'Nathan',
-                        cls: 'show-mgr-label show-mgr-help-label bold-thick'
+                        html: 'Welcome, Nathan',
+                        width: '50%',
+                        style: 'position:relative; margin-left: 50%; left: -90px;',
+                        cls: 'show-mgr-label bold-thick'
                     }
                 ]
             },
             {
                 xtype: 'container',
                 defaults: {
-                  style: 'margin-top: 10px'
+                    style: 'margin-top: 10px'
                 },
                 items: [
                     {
@@ -43,21 +37,56 @@ Ext.define('PrototypesMobile.view.Menu', {
                         height: '20%',
                         items: [
                             {
-                                xtype: 'button',
-                                text: 'Active',
-                                height: '96px',
+                                xtype: 'container',
                                 flex: 1,
-                                padding: '50 0 0 0',
-                                cls: 'show-mgr-button'
+                                items: [
+                                    {
+                                        xtype: 'button',
+                                        itemId: 'btnActive',
+                                        text: '4',
+                                        top: 0,
+                                        width: '96%',
+                                        style: 'right: 12px',
+                                        height: '96px',
+                                        cls: 'transparent-button'
+                                    },
+                                    {
+                                        xtype: 'button',
+                                        text: 'Active',
+                                        height: '96px',
+                                        padding: '50 0 0 0',
+                                        cls: 'show-mgr-button'
+                                    }
+                                ]
+                            },
+                            {
+                                xtype: 'container',
+                                flex: 1,
+                                items: [
+                                    {
+                                        xtype: 'button',
+                                        itemId: 'btnQueue',
+                                        text: '8',
+                                        top: 0,
+                                        width: '100%',
+                                        style: 'right: -12px',
+                                        height: '96px',
+                                        cls: 'transparent-button'
+                                    },
+                                    {
+                                        xtype: 'button',
+                                        text: 'Queue',
+                                        height: '96px',
+                                        padding: '50 0 0 0',
+                                        style: 'margin-right: -15px',
+                                        cls: 'show-mgr-button'
+                                    }
+                                ]
                             },
                             {
                                 xtype: 'button',
-                                text: 'Queue',
                                 height: '96px',
-                                flex: 1,
-                                style: 'margin-left: 10px',
-                                padding: '50 0 0 0',
-                                cls: 'show-mgr-button'
+                                style: 'visibility:hidden;'
                             }
                         ]
                     },

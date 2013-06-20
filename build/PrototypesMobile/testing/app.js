@@ -62546,7 +62546,6 @@ Ext.define('PrototypesMobile.view.Login', {
                     
                  
       
-    scrollable: false,
     config: {
         cls: 'main-container',
         items: [
@@ -62635,13 +62634,13 @@ Ext.define('PrototypesMobile.view.Login', {
                     {
                         xtype: 'button',
                         text: 'Log In',
+                        itemId: 'btnLogIn',
                         cls: 'show-mgr-button'
                     }
                 ]
             },
             {
                 xtype: 'container',
-                cls: 'footer-container',
                 items: [
                     {
                         xtype: 'button',
@@ -62773,6 +62772,125 @@ Ext.define('PrototypesMobile.view.Help', {
     }
 });
 
+Ext.define('PrototypesMobile.view.Menu', {
+    extend:  Ext.Container ,
+    xtype: 'menu',
+    id: 'menu',
+    fullscreen: true,
+    config: {
+        cls: 'main-container',
+        items: [
+            {
+                xtype: 'container',
+                items: [
+                    {
+                        xtype: 'label',
+                        html: 'Welcome, Nathan',
+                        width: '50%',
+                        style: 'position:relative; margin-left: 50%; left: -90px;',
+                        cls: 'show-mgr-label bold-thick'
+                    }
+                ]
+            },
+            {
+                xtype: 'container',
+                defaults: {
+                    style: 'margin-top: 10px'
+                },
+                items: [
+                    {
+                        xtype: 'button',
+                        text: 'Clock Out',
+                        cls: 'show-mgr-button'
+
+                    },
+                    {
+                        xtype: 'container',
+                        layout: 'hbox',
+                        width: '100%',
+                        height: '20%',
+                        items: [
+                            {
+                                xtype: 'container',
+                                flex: 1,
+                                items: [
+                                    {
+                                        xtype: 'button',
+                                        itemId: 'btnActive',
+                                        text: '4',
+                                        top: 0,
+                                        width: '96%',
+                                        style: 'right: 12px',
+                                        height: '96px',
+                                        cls: 'transparent-button'
+                                    },
+                                    {
+                                        xtype: 'button',
+                                        text: 'Active',
+                                        height: '96px',
+                                        padding: '50 0 0 0',
+                                        cls: 'show-mgr-button'
+                                    }
+                                ]
+                            },
+                            {
+                                xtype: 'container',
+                                flex: 1,
+                                items: [
+                                    {
+                                        xtype: 'button',
+                                        itemId: 'btnQueue',
+                                        text: '8',
+                                        top: 0,
+                                        width: '100%',
+                                        style: 'right: -12px',
+                                        height: '96px',
+                                        cls: 'transparent-button'
+                                    },
+                                    {
+                                        xtype: 'button',
+                                        text: 'Queue',
+                                        height: '96px',
+                                        padding: '50 0 0 0',
+                                        style: 'margin-right: -15px',
+                                        cls: 'show-mgr-button'
+                                    }
+                                ]
+                            },
+                            {
+                                xtype: 'button',
+                                height: '96px',
+                                style: 'visibility:hidden;'
+                            }
+                        ]
+                    },
+                    {
+                        xtype: 'button',
+                        text: 'View Order History',
+                        cls: 'show-mgr-button'
+                    },
+                    {
+                        xtype: 'button',
+                        text: 'View Upcoming Shifts',
+                        cls: 'show-mgr-button'
+                    },
+                    {
+                        xtype: 'button',
+                        text: 'Request Time Away',
+                        cls: 'show-mgr-button'
+                    },
+                    {
+                        xtype: 'button',
+                        text: 'Settings',
+                        cls: 'show-mgr-button'
+                    }
+
+                ]
+            }
+        ]
+    }
+});
+
 Ext.define('PrototypesMobile.view.Main', {
     extend:  Ext.Container ,
     xtype: 'main',
@@ -62780,12 +62898,16 @@ Ext.define('PrototypesMobile.view.Main', {
     config: {
         layout: 'card',
         fullscreen:true,
+        scrollable: true,
         items: [
             {
                 xtype: 'login'
             },
             {
                 xtype: 'help'
+            },
+            {
+                xtype: 'menu'
             }
         ]
     }
@@ -62799,7 +62921,8 @@ Ext.define('PrototypesMobile.controller.MainController', {
             loginView : 'login',
             helpView : 'help',
             btnLoginHelp: 'login [itemId=btnLoginHelp]',
-            btnHelpBack: 'help [itemId=btnHelpBack]'
+            btnHelpBack: 'help [itemId=btnHelpBack]',
+            btnLogIn: 'login [itemId=btnLogIn]'
         },
 
         control: {
@@ -62814,6 +62937,9 @@ Ext.define('PrototypesMobile.controller.MainController', {
             },
             btnHelpBack: {
                 tap: 'onBackSelected'
+            },
+            btnLogIn: {
+                tap: 'onLogIn'
             }
         }
     },
@@ -62827,6 +62953,10 @@ Ext.define('PrototypesMobile.controller.MainController', {
 
     onBackSelected: function() {
         this.getMainView().setActiveItem(0);
+    },
+
+    onLogIn: function() {
+        this.getMainView().setActiveItem(2);
     }
 });
 
@@ -62856,7 +62986,8 @@ Ext.application({
     views: [
         'Login',
         'Main',
-        'Help'
+        'Help',
+        'Menu'
     ],
 
     controllers: [

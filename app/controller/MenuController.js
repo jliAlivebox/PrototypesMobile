@@ -13,7 +13,7 @@ Ext.define('PrototypesMobile.controller.MenuController', {
                 tap: 'onActiveSelected'
             },
             btnQueue: {
-                tap: 'onBackSelected'
+                tap: 'onQueueSelected'
             }
         }
     },

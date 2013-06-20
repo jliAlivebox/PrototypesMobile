@@ -62566,7 +62566,6 @@ Ext.define('PrototypesMobile.view.Login', {
             {
                 xtype: 'container',
                 cls: 'body-container',
-                height: '500px',
                 items: [
 
                     {
@@ -62781,14 +62780,16 @@ Ext.define('PrototypesMobile.view.Menu', {
         cls: 'main-container',
         items: [
             {
-                xtype: 'container',
+                xtype : 'toolbar',
+                docked: 'top',
+                title: 'Welcome, Nathan',
+                cls: 'show-mrg-toolbar',
                 items: [
                     {
-                        xtype: 'label',
-                        html: 'Welcome, Nathan',
-                        width: '50%',
-                        style: 'position:relative; margin-left: 50%; left: -90px;',
-                        cls: 'show-mgr-label bold-thick'
+                        xtype: 'button',
+                        text: 'Menu',
+                        cls: 'show-mgr-toolbar-button toolbar-btn',
+                        itemId: 'btnMenuBack'
                     }
                 ]
             },
@@ -62891,6 +62892,33 @@ Ext.define('PrototypesMobile.view.Menu', {
     }
 });
 
+Ext.define('PrototypesMobile.view.order.MyOrders', {
+    extend:  Ext.Container ,
+    xtype: 'myorders',
+    id: 'myorders',
+    fullscreen: true,
+    config: {
+        cls: 'main-container',
+        items: [
+            {
+                xtype : 'toolbar',
+                itemId: 'tbMyOrders',
+                docked: 'top',
+                title: 'My Active Orders',
+                cls: 'show-mrg-toolbar',
+                items: [
+                    {
+                        xtype: 'button',
+                        text: 'Menu',
+                        cls: 'show-mgr-toolbar-button toolbar-btn',
+                        itemId: 'btnMenuBack'
+                    }
+                ]
+            }
+        ]
+    }
+});
+
 Ext.define('PrototypesMobile.view.Main', {
     extend:  Ext.Container ,
     xtype: 'main',
@@ -62908,6 +62936,9 @@ Ext.define('PrototypesMobile.view.Main', {
             },
             {
                 xtype: 'menu'
+            },
+            {
+                xtype: 'myorders'
             }
         ]
     }
@@ -62960,6 +62991,66 @@ Ext.define('PrototypesMobile.controller.MainController', {
     }
 });
 
+Ext.define('PrototypesMobile.controller.MenuController', {
+    extend:  Ext.app.Controller ,
+    config: {
+        refs: {
+            mainView : 'main',
+            btnActive: 'menu [itemId=btnActive]',
+            btnQueue: 'menu [itemId=btnQueue]',
+            tbMyOrders : 'myorders [itemId=tbMyOrders]'
+        },
+
+        control: {
+            btnActive: {
+                tap: 'onActiveSelected'
+            },
+            btnQueue: {
+                tap: 'onQueueSelected'
+            }
+        }
+    },
+
+    launch: function() {
+    },
+
+    onActiveSelected: function(){
+        this.getTbMyOrders().setTitle('My Active Orders');
+        this.getMainView().setActiveItem(3);
+    },
+
+    onQueueSelected: function(){
+        this.getTbMyOrders().setTitle('My Orders Queue');
+        this.getMainView().setActiveItem(3);
+    }
+
+});
+
+Ext.define('PrototypesMobile.controller.order.OrderController', {
+    extend:  Ext.app.Controller ,
+    config: {
+        refs: {
+            mainView : 'main',
+            btnMenuBack: 'myorders [itemId=btnMenuBack]'
+        },
+
+        control: {
+            btnMenuBack: {
+                tap: 'onBackMenu'
+            }
+        }
+    },
+
+    launch: function() {
+    },
+
+    onBackMenu: function(){
+        debugger;
+        this.getMainView().setActiveItem(2);
+    }
+
+});
+
 /*
     This file is generated and updated by Sencha Cmd. You can edit this file as
     needed for your application, but these edits will have to be merged by
@@ -62987,11 +63078,14 @@ Ext.application({
         'Login',
         'Main',
         'Help',
-        'Menu'
+        'Menu',
+        'order.MyOrders'
     ],
 
     controllers: [
-        'MainController'
+        'MainController',
+        'MenuController',
+        'order.OrderController'
     ],
 
     icon: {

@@ -36,7 +36,8 @@ Ext.application({
 
     controllers: [
         'MainController',
-        'MenuController'
+        'MenuController',
+        'order.OrderController'
     ],
 
     icon: {

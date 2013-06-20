@@ -6,7 +6,8 @@ Ext.define('PrototypesMobile.controller.MainController', {
             loginView : 'login',
             helpView : 'help',
             btnLoginHelp: 'login [itemId=btnLoginHelp]',
-            btnHelpBack: 'help [itemId=btnHelpBack]'
+            btnHelpBack: 'help [itemId=btnHelpBack]',
+            btnLogIn: 'login [itemId=btnLogIn]'
         },
 
         control: {
@@ -21,6 +22,9 @@ Ext.define('PrototypesMobile.controller.MainController', {
             },
             btnHelpBack: {
                 tap: 'onBackSelected'
+            },
+            btnLogIn: {
+                tap: 'onLogIn'
             }
         }
     },
@@ -34,5 +38,9 @@ Ext.define('PrototypesMobile.controller.MainController', {
 
     onBackSelected: function() {
         this.getMainView().setActiveItem(0);
+    },
+
+    onLogIn: function() {
+        this.getMainView().setActiveItem(2);
     }
 });

@@ -9,10 +9,6 @@ Ext.define('PrototypesMobile.view.Login', {
         'Ext.Label',
         'Ext.Img'
     ],
-    scrollable: {
-        direction: 'vertical',
-        directionLock: true
-    },
     config: {
         cls: 'main-container',
         items: [
@@ -101,13 +97,13 @@ Ext.define('PrototypesMobile.view.Login', {
                     {
                         xtype: 'button',
                         text: 'Log In',
+                        itemId: 'btnLogIn',
                         cls: 'show-mgr-button'
                     }
                 ]
             },
             {
                 xtype: 'container',
-                cls: 'footer-container',
                 items: [
                     {
                         xtype: 'button',

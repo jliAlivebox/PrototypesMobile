@@ -29,7 +29,8 @@ Ext.application({
     views: [
         'Login',
         'Main',
-        'Help'
+        'Help',
+        'Menu'
     ],
 
     controllers: [

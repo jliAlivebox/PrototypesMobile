@@ -7,12 +7,12 @@ Ext.define('PrototypesMobile.view.Main', {
         fullscreen:true,
         scrollable: true,
         items: [
-            {
+            /*{
                 xtype: 'login'
             },
             {
                 xtype: 'help'
-            },
+            },*/
             {
                 xtype: 'menu'
             }

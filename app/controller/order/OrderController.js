@@ -3,12 +3,16 @@ Ext.define('PrototypesMobile.controller.order.OrderController', {
     config: {
         refs: {
             mainView : 'main',
+            myOrders: 'myorders',
             btnMenuBack: 'myorders [itemId=btnMenuBack]'
         },
 
         control: {
             btnMenuBack: {
                 tap: 'onBackMenu'
+            },
+            myOrders: {
+                afterrender: 'onMyOrdersBoxReady'
             }
         }
     },
@@ -17,8 +21,11 @@ Ext.define('PrototypesMobile.controller.order.OrderController', {
     },
 
     onBackMenu: function(){
-        debugger;
         this.getMainView().setActiveItem(2);
+    },
+
+    onMyOrdersBoxReady: function(){
+        var tmpOrder1 = this.getMyOrders().down('itemorder[itemId=order1]');
     }
 
 });

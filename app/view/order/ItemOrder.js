@@ -62,5 +62,9 @@ Ext.define('PrototypesMobile.view.order.ItemOrder', {
                 ]
             }
         ]
+    },
+
+    getBtnStatus: function(){
+        return this.down('button[itemId=btnStatus]');
     }
 });

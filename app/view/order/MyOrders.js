@@ -23,15 +23,16 @@ Ext.define('PrototypesMobile.view.order.MyOrders', {
                 ]
             },
             {
-                xtype: 'itemorder'
+                xtype: 'itemorder',
+                itemId: 'order1'
             },
             {
                 xtype: 'itemorder',
-                btnStatus: 'yellow'
+                itemId: 'order2'
             },
             {
                 xtype: 'itemorder',
-                btnStatus: 'red'
+                itemId: 'order3'
             }
         ]
     }

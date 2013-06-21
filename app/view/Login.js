@@ -2,13 +2,6 @@ Ext.define('PrototypesMobile.view.Login', {
     extend: 'Ext.Container',
     xtype: 'login',
     id: 'login',
-    requires: [    'Ext.form.Panel',
-        'Ext.form.FieldSet',
-        'Ext.field.Password',
-        'Ext.field.Toggle',
-        'Ext.Label',
-        'Ext.Img'
-    ],
     config: {
         scrollable: true,
         cls: 'main-container',
@@ -64,10 +57,11 @@ Ext.define('PrototypesMobile.view.Login', {
                                 right: 30,
                                 top: 12,
                                 cls: 'login-company-label',
-                                html: 'Alivebox'
+                                html: 'ShowMgr'
                             },
                             {
                                 xtype: 'button',
+                                itemId: 'btnCompany',
                                 iconAlign: 'right',
                                 right: 0,
                                 text: ' ',

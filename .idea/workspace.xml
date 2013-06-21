@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b669b61b-0d91-4ce4-b710-01e9e348e414" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/order/ItemOrder.js" afterPath="$PROJECT_DIR$/app/view/order/ItemOrder.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/Main.js" afterPath="$PROJECT_DIR$/app/view/Main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/Help.js" afterPath="$PROJECT_DIR$/app/view/Help.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/Login.js" afterPath="$PROJECT_DIR$/app/view/Login.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/Menu.js" afterPath="$PROJECT_DIR$/app/view/Menu.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/order/MyOrders.js" afterPath="$PROJECT_DIR$/app/view/order/MyOrders.js" />
     </list>
     <ignored path="PrototypesMobile.iws" />
@@ -46,7 +47,7 @@
       <file leaf-file-name="Login.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/view/Login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="80" column="22" selection-start="2821" selection-end="2821" vertical-scroll-proportion="0.0">
+            <state line="11" column="0" selection-start="280" selection-end="280" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -55,7 +56,7 @@
       <file leaf-file-name="Main.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/view/Main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="14" selection-start="453" selection-end="453" vertical-scroll-proportion="0.0">
+            <state line="7" column="22" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -64,16 +65,16 @@
       <file leaf-file-name="MyOrders.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/view/order/MyOrders.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="13" selection-start="884" selection-end="884" vertical-scroll-proportion="0.0">
+            <state line="6" column="8" selection-start="169" selection-end="186" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ItemOrder.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ItemOrder.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/view/order/ItemOrder.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="42" selection-start="262" selection-end="262" vertical-scroll-proportion="0.13631158">
+            <state line="5" column="13" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -118,16 +119,16 @@
       <file leaf-file-name="Help.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/view/Help.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="22" selection-start="748" selection-end="762" vertical-scroll-proportion="0.0">
+            <state line="6" column="25" selection-start="168" selection-end="168" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.json" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.json">
+      <file leaf-file-name="Menu.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/view/Menu.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="29" selection-start="3755" selection-end="3755" vertical-scroll-proportion="0.0">
+            <state line="11" column="24" selection-start="290" selection-end="290" vertical-scroll-proportion="0.2142039">
               <folding />
             </state>
           </provider>
@@ -151,7 +152,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/resources/sass/src/view/Login.css" />
         <option value="$PROJECT_DIR$/app/view/help.js" />
         <option value="$PROJECT_DIR$/app/controller/LoginController.js" />
@@ -160,13 +160,14 @@
         <option value="$PROJECT_DIR$/app/controller/MainController.js" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/app.json" />
-        <option value="$PROJECT_DIR$/app/view/Help.js" />
         <option value="$PROJECT_DIR$/resources/sass/src/view/Login.scss" />
         <option value="$PROJECT_DIR$/resources/sass/src/view/Main.scss" />
-        <option value="$PROJECT_DIR$/app/view/Login.js" />
         <option value="$PROJECT_DIR$/app/view/Main.js" />
-        <option value="$PROJECT_DIR$/app/view/order/MyOrders.js" />
         <option value="$PROJECT_DIR$/app/view/order/ItemOrder.js" />
+        <option value="$PROJECT_DIR$/app/view/order/MyOrders.js" />
+        <option value="$PROJECT_DIR$/app/view/Login.js" />
+        <option value="$PROJECT_DIR$/app/view/Help.js" />
+        <option value="$PROJECT_DIR$/app/view/Menu.js" />
       </list>
     </option>
   </component>
@@ -568,11 +569,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/sass/src/view/Login.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="43" selection-start="735" selection-end="735" vertical-scroll-proportion="0.4160839" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/icons/header.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -628,13 +624,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/Help.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="22" selection-start="748" selection-end="762" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/sass/src/view/Main.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="46" column="0" selection-start="649" selection-end="649" vertical-scroll-proportion="0.0">
@@ -642,30 +631,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/Login.js">
+    <entry file="file://$PROJECT_DIR$/app/view/order/ItemOrder.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="22" selection-start="2821" selection-end="2821" vertical-scroll-proportion="0.0">
+        <state line="5" column="13" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/Main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="14" selection-start="453" selection-end="453" vertical-scroll-proportion="0.0">
+        <state line="7" column="22" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/order/MyOrders.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="13" selection-start="884" selection-end="884" vertical-scroll-proportion="0.0">
+        <state line="6" column="8" selection-start="169" selection-end="186" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/order/ItemOrder.js">
+    <entry file="file://$PROJECT_DIR$/app/view/Login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="42" selection-start="262" selection-end="262" vertical-scroll-proportion="0.13631158">
+        <state line="11" column="0" selection-start="280" selection-end="280" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/Help.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="25" selection-start="168" selection-end="168" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/Menu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="24" selection-start="290" selection-end="290" vertical-scroll-proportion="0.2142039">
           <folding />
         </state>
       </provider>

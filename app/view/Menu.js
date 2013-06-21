@@ -4,6 +4,7 @@ Ext.define('PrototypesMobile.view.Menu', {
     id: 'menu',
     fullscreen: true,
     config: {
+        scrollable: true,
         cls: 'main-container',
         items: [
             {

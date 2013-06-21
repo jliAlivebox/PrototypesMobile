@@ -4,6 +4,7 @@ Ext.define('PrototypesMobile.view.order.MyOrders', {
     id: 'myorders',
     fullscreen: true,
     config: {
+        scrollable: true,
         cls: 'main-container',
         items: [
             {

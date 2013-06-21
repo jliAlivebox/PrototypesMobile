@@ -4,6 +4,7 @@ Ext.define('PrototypesMobile.view.Help', {
     id: 'help',
     fullscreen: true,
     config: {
+        scrollable: true,
         cls: 'main-container',
         items: [
             {

@@ -20,6 +20,17 @@ Ext.define('PrototypesMobile.view.order.MyOrders', {
                         itemId: 'btnMenuBack'
                     }
                 ]
+            },
+            {
+                xtype: 'itemorder'
+            },
+            {
+                xtype: 'itemorder',
+                btnStatus: 'yellow'
+            },
+            {
+                xtype: 'itemorder',
+                btnStatus: 'red'
             }
         ]
     }

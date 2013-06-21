@@ -13,6 +13,7 @@ Ext.define('PrototypesMobile.view.Login', {
         direction: 'vertical',
         directionLock: true
     },
+    height: '500px',
     config: {
         cls: 'main-container',
         items: [
@@ -33,7 +34,6 @@ Ext.define('PrototypesMobile.view.Login', {
             {
                 xtype: 'container',
                 cls: 'body-container',
-                height: '500px',
                 items: [
 
                     {
@@ -106,16 +106,10 @@ Ext.define('PrototypesMobile.view.Login', {
                 ]
             },
             {
-                xtype: 'container',
-                cls: 'footer-container',
-                items: [
-                    {
-                        xtype: 'button',
-                        text: 'Need Help?',
-                        cls: 'login-need-help-button',
-                        itemId: 'btnLoginHelp'
-                    }
-                ]
+                xtype: 'button',
+                text: 'Need Help?',
+                cls: 'login-need-help-button',
+                itemId: 'btnLoginHelp'
             }
         ]
     },

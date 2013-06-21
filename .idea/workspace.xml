@@ -8,7 +8,7 @@
     <file path="/Dummy.txt" changelist="b669b61b-0d91-4ce4-b710-01e9e348e414" time="1371657269118" ignored="false" />
     <file path="$PROJECT_DIR$/../Prototipos/app/view/selfservice/importwizard/ImportWizardCardContainer.js" changelist="b669b61b-0d91-4ce4-b710-01e9e348e414" time="1370885548004" ignored="false" />
     <file path="$PROJECT_DIR$/../xxledrinks/app/view/Main.js" changelist="b669b61b-0d91-4ce4-b710-01e9e348e414" time="1370893748490" ignored="false" />
-    <file path="/Login.js" changelist="b669b61b-0d91-4ce4-b710-01e9e348e414" time="1371680247367" ignored="false" />
+    <file path="/Login.js" changelist="b669b61b-0d91-4ce4-b710-01e9e348e414" time="1371680617865" ignored="false" />
     <file path="/a.dummy" changelist="b669b61b-0d91-4ce4-b710-01e9e348e414" time="1371591481862" ignored="false" />
     <file path="/Login.scss" changelist="b669b61b-0d91-4ce4-b710-01e9e348e414" time="1371677177058" ignored="false" />
     <file path="/index.php" changelist="b669b61b-0d91-4ce4-b710-01e9e348e414" time="1371594568601" ignored="false" />
@@ -41,7 +41,7 @@
       <file leaf-file-name="Login.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/view/Login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="6" selection-start="363" selection-end="363" vertical-scroll-proportion="0.27324915">
+            <state line="36" column="23" selection-start="1006" selection-end="1006" vertical-scroll-proportion="0.019517796">
               <folding />
             </state>
           </provider>
@@ -95,7 +95,7 @@
       <file leaf-file-name="app.json" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="29" selection-start="3755" selection-end="3755" vertical-scroll-proportion="-19.76923">
+            <state line="75" column="29" selection-start="3755" selection-end="3755" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -396,10 +396,10 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="reference.settings.ide.settings.spelling" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../xxledrinks" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -470,13 +470,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="32" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998884" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2230523" sideWeight="0.67001116" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22572039" sideWeight="0.67001116" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -574,9 +574,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/Main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="29" selection-start="225" selection-end="230" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="9" column="29" selection-start="225" selection-end="230" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controller/MainController.js">
@@ -588,28 +586,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/packager.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="16" selection-start="1236" selection-end="1236" vertical-scroll-proportion="0.4366864">
-          <folding />
-        </state>
+        <state line="40" column="16" selection-start="1236" selection-end="1236" vertical-scroll-proportion="0.4366864" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/sass/src/view/Main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="29" selection-start="3755" selection-end="3755" vertical-scroll-proportion="-19.76923">
+        <state line="75" column="29" selection-start="3755" selection-end="3755" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -651,7 +643,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/Login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="6" selection-start="363" selection-end="363" vertical-scroll-proportion="0.27324915">
+        <state line="36" column="23" selection-start="1006" selection-end="1006" vertical-scroll-proportion="0.019517796">
           <folding />
         </state>
       </provider>

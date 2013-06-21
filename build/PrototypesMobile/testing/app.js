@@ -62546,7 +62546,6 @@ Ext.define('PrototypesMobile.view.Login', {
                     
                  
       
-    scrollable: false,
     config: {
         cls: 'main-container',
         items: [
@@ -62567,7 +62566,6 @@ Ext.define('PrototypesMobile.view.Login', {
             {
                 xtype: 'container',
                 cls: 'body-container',
-                height: '500px',
                 items: [
 
                     {
@@ -62635,13 +62633,13 @@ Ext.define('PrototypesMobile.view.Login', {
                     {
                         xtype: 'button',
                         text: 'Log In',
+                        itemId: 'btnLogIn',
                         cls: 'show-mgr-button'
                     }
                 ]
             },
             {
                 xtype: 'container',
-                cls: 'footer-container',
                 items: [
                     {
                         xtype: 'button',
@@ -62773,6 +62771,154 @@ Ext.define('PrototypesMobile.view.Help', {
     }
 });
 
+Ext.define('PrototypesMobile.view.Menu', {
+    extend:  Ext.Container ,
+    xtype: 'menu',
+    id: 'menu',
+    fullscreen: true,
+    config: {
+        cls: 'main-container',
+        items: [
+            {
+                xtype : 'toolbar',
+                docked: 'top',
+                title: 'Welcome, Nathan',
+                cls: 'show-mrg-toolbar',
+                items: [
+                    {
+                        xtype: 'button',
+                        text: 'Menu',
+                        cls: 'show-mgr-toolbar-button toolbar-btn',
+                        itemId: 'btnMenuBack'
+                    }
+                ]
+            },
+            {
+                xtype: 'container',
+                defaults: {
+                    style: 'margin-top: 10px'
+                },
+                items: [
+                    {
+                        xtype: 'button',
+                        text: 'Clock Out',
+                        cls: 'show-mgr-button'
+
+                    },
+                    {
+                        xtype: 'container',
+                        layout: 'hbox',
+                        width: '100%',
+                        height: '20%',
+                        items: [
+                            {
+                                xtype: 'container',
+                                flex: 1,
+                                items: [
+                                    {
+                                        xtype: 'button',
+                                        itemId: 'btnActive',
+                                        text: '4',
+                                        top: 0,
+                                        width: '96%',
+                                        style: 'right: 12px',
+                                        height: '96px',
+                                        cls: 'transparent-button'
+                                    },
+                                    {
+                                        xtype: 'button',
+                                        text: 'Active',
+                                        height: '96px',
+                                        padding: '50 0 0 0',
+                                        cls: 'show-mgr-button'
+                                    }
+                                ]
+                            },
+                            {
+                                xtype: 'container',
+                                flex: 1,
+                                items: [
+                                    {
+                                        xtype: 'button',
+                                        itemId: 'btnQueue',
+                                        text: '8',
+                                        top: 0,
+                                        width: '100%',
+                                        style: 'right: -12px',
+                                        height: '96px',
+                                        cls: 'transparent-button'
+                                    },
+                                    {
+                                        xtype: 'button',
+                                        text: 'Queue',
+                                        height: '96px',
+                                        padding: '50 0 0 0',
+                                        style: 'margin-right: -15px',
+                                        cls: 'show-mgr-button'
+                                    }
+                                ]
+                            },
+                            {
+                                xtype: 'button',
+                                height: '96px',
+                                style: 'visibility:hidden;'
+                            }
+                        ]
+                    },
+                    {
+                        xtype: 'button',
+                        text: 'View Order History',
+                        cls: 'show-mgr-button'
+                    },
+                    {
+                        xtype: 'button',
+                        text: 'View Upcoming Shifts',
+                        cls: 'show-mgr-button'
+                    },
+                    {
+                        xtype: 'button',
+                        text: 'Request Time Away',
+                        cls: 'show-mgr-button'
+                    },
+                    {
+                        xtype: 'button',
+                        text: 'Settings',
+                        cls: 'show-mgr-button'
+                    }
+
+                ]
+            }
+        ]
+    }
+});
+
+Ext.define('PrototypesMobile.view.order.MyOrders', {
+    extend:  Ext.Container ,
+    xtype: 'myorders',
+    id: 'myorders',
+    fullscreen: true,
+    config: {
+        cls: 'main-container',
+        items: [
+            {
+                xtype : 'toolbar',
+                itemId: 'tbMyOrders',
+                docked: 'top',
+                title: 'My Active Orders',
+                cls: 'show-mrg-toolbar',
+                items: [
+                    {
+                        xtype: 'button',
+                        text: 'Menu',
+                        cls: 'show-mgr-toolbar-button toolbar-btn',
+                        itemId: 'btnMenuBack'
+                    }
+                ]
+            }
+        ]
+    }
+});
+
 Ext.define('PrototypesMobile.view.Main', {
     extend:  Ext.Container ,
     xtype: 'main',
@@ -62780,12 +62926,19 @@ Ext.define('PrototypesMobile.view.Main', {
     config: {
         layout: 'card',
         fullscreen:true,
+        scrollable: true,
         items: [
             {
                 xtype: 'login'
             },
             {
                 xtype: 'help'
+            },
+            {
+                xtype: 'menu'
+            },
+            {
+                xtype: 'myorders'
             }
         ]
     }
@@ -62799,7 +62952,8 @@ Ext.define('PrototypesMobile.controller.MainController', {
             loginView : 'login',
             helpView : 'help',
             btnLoginHelp: 'login [itemId=btnLoginHelp]',
-            btnHelpBack: 'help [itemId=btnHelpBack]'
+            btnHelpBack: 'help [itemId=btnHelpBack]',
+            btnLogIn: 'login [itemId=btnLogIn]'
         },
 
         control: {
@@ -62814,6 +62968,9 @@ Ext.define('PrototypesMobile.controller.MainController', {
             },
             btnHelpBack: {
                 tap: 'onBackSelected'
+            },
+            btnLogIn: {
+                tap: 'onLogIn'
             }
         }
     },
@@ -62827,7 +62984,71 @@ Ext.define('PrototypesMobile.controller.MainController', {
 
     onBackSelected: function() {
         this.getMainView().setActiveItem(0);
+    },
+
+    onLogIn: function() {
+        this.getMainView().setActiveItem(2);
     }
+});
+
+Ext.define('PrototypesMobile.controller.MenuController', {
+    extend:  Ext.app.Controller ,
+    config: {
+        refs: {
+            mainView : 'main',
+            btnActive: 'menu [itemId=btnActive]',
+            btnQueue: 'menu [itemId=btnQueue]',
+            tbMyOrders : 'myorders [itemId=tbMyOrders]'
+        },
+
+        control: {
+            btnActive: {
+                tap: 'onActiveSelected'
+            },
+            btnQueue: {
+                tap: 'onQueueSelected'
+            }
+        }
+    },
+
+    launch: function() {
+    },
+
+    onActiveSelected: function(){
+        this.getTbMyOrders().setTitle('My Active Orders');
+        this.getMainView().setActiveItem(3);
+    },
+
+    onQueueSelected: function(){
+        this.getTbMyOrders().setTitle('My Orders Queue');
+        this.getMainView().setActiveItem(3);
+    }
+
+});
+
+Ext.define('PrototypesMobile.controller.order.OrderController', {
+    extend:  Ext.app.Controller ,
+    config: {
+        refs: {
+            mainView : 'main',
+            btnMenuBack: 'myorders [itemId=btnMenuBack]'
+        },
+
+        control: {
+            btnMenuBack: {
+                tap: 'onBackMenu'
+            }
+        }
+    },
+
+    launch: function() {
+    },
+
+    onBackMenu: function(){
+        debugger;
+        this.getMainView().setActiveItem(2);
+    }
+
 });
 
 /*
@@ -62856,11 +63077,15 @@ Ext.application({
     views: [
         'Login',
         'Main',
-        'Help'
+        'Help',
+        'Menu',
+        'order.MyOrders'
     ],
 
     controllers: [
-        'MainController'
+        'MainController',
+        'MenuController',
+        'order.OrderController'
     ],
 
     icon: {

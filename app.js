@@ -29,11 +29,16 @@ Ext.application({
     views: [
         'Login',
         'Main',
-        'Help'
+        'Help',
+        'Menu',
+        'order.MyOrders',
+        'order.ItemOrder'
     ],
 
     controllers: [
-        'MainController'
+        'MainController',
+        'MenuController',
+        'order.OrderController'
     ],
 
     icon: {

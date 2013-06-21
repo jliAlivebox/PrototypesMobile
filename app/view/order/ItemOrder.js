@@ -11,7 +11,7 @@ Ext.define('PrototypesMobile.view.order.ItemOrder', {
                     {
                         xtype: 'button',
                         itemId: 'btnStatus',
-                        style: 'background: blue; padding-top: 100%',
+                        style: 'background: blue; padding-top: 50px',
                         width: '5%'
                     },
                     {

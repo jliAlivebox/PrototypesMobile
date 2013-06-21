@@ -31,7 +31,8 @@ Ext.application({
         'Main',
         'Help',
         'Menu',
-        'order.MyOrders'
+        'order.MyOrders',
+        'order.ItemOrder'
     ],
 
     controllers: [

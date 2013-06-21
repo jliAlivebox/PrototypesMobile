@@ -7,7 +7,7 @@ Ext.define('PrototypesMobile.view.Main', {
         fullscreen:true,
         scrollable: true,
         items: [
-            {
+            /*{
                 xtype: 'login'
             },
             {
@@ -18,6 +18,9 @@ Ext.define('PrototypesMobile.view.Main', {
             },
             {
                 xtype: 'myorders'
+            }*/
+            {
+               xtype: 'itemorder'
             }
         ]
     }

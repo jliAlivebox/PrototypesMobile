@@ -5,7 +5,6 @@ Ext.define('PrototypesMobile.view.Main', {
     config: {
         layout: 'card',
         fullscreen:true,
-        scrollable: true,
         items: [
             {
                 xtype: 'login'
